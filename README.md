@@ -5,7 +5,7 @@
 
 ## Description
 
-_This is a little dynamic page that takes in information from the user and suggests a possible date option for that user._
+_This is a little dynamic page that takes in information from the user and suggests a possible date option for that user. Please don't take this page seriously. The parameters are arbituary with no real corelation to any actual people._
 
 ## Setup/Installation Requirements
 
@@ -16,7 +16,7 @@ _This is a little dynamic page that takes in information from the user and sugge
 ## View Online
 
 * View at https://macj314.github.io/macj314/celeb-date-quiz
-* Or here: https://Code-Cacophony.github.io/Code-Cacophony/amusement-park
+* Or here: https://Code-Cacophony.github.io/Code-Cacophony/celeb-date-quiz
 
 ### License
 

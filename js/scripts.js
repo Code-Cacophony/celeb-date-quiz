@@ -1,26 +1,25 @@
-var formatHeight = function(number1, number2){
-  return number1 + "' " + number2;
-}
-
-var add = function(number1, number2){
-  return number1 + number2;
-}
-
 $(document).ready(function(){
-  $("form#form-height").submit(function(){
-    event.preventDefault();
-    var number1 = parseInt($("#height-f").val());
-    var number2 = parseInt($("#height-i").val());
-    // var display = formatHeight(number1, number2);
-    // $("#output").text(display);
-    var result = add(number1, number2);
-    $("#output").text(result);
-    $("#rides").show();
+  $("form#user-info").submit(function(event) {
+    var season = $("input:radio[name=season]:checked").val();
+    var dog = $("input:radio[name=dog]:checked").val();
+    var age = parseInt($("input#age").val());
+    var gender = $("select#gender").val();
+    if (age <= 18 || age >= 16 && gender == male){
 
-    if (result <= 12){
-      $(".rides-short").effect("#highlight");
+      $("#d1").show();     
     }
-    else {$(".rides-tall").toggle(".highlight-tall");}
-
+    else if (age > 18 && gender === male){
+      $("#d2").show();
+    }
+    else if (age > 18 && dog === "doberman" || dog === "german-shep") {
+      $("#d3").show();
+    }
+    else if (season == fall || winter){
+      $("d4").show();
+    }
+    else if(season === spring || season === summer){
+      $("d5").show();
+    }
+    event.preventDefault();
   });
 });
