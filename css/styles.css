@@ -1,3 +1,7 @@
+#no-input {
+  display: none;
+}
+
 .btn{
   display: block;
 }

@@ -11,33 +11,21 @@
     <div class="container">
       <h1>Please enter your personal info!</h1>
       <div class="blanks">
-        <form id="user-info">         
-          <div class="radio">
-            <label><input type="radio" name="season" value="spring">Spring</label>           
-            <label><input type="radio" name="season" value="summer">Summer</label>
-            <label><input type="radio" name="season" value="fall">Fall</label>
-            <label><input type="radio" name="season" value="winter">Winter</label>
-            <p id="no-season">Pick a season, you downer.</p>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="dog" value="chihuahua">Chihuahua</label>
-            <label><input type="radio" name="dog" value="doberman">Doberman</label>
-            <label><input type="radio" name="dog" value="german-shep">German Shepard</label>
-            <p id="no-dog">Cat person?</p>
-          </div>
+        <form id="user-info">     
+
           <div class="form-group">
             <label for="age">Your Age</label>
             <input type="text" id="age">
-            <p id="no-age">What are you, a super old grandpa? Creep.</p>
+            <p id="no-input">Please enter a valid age.</p>
           </div>
           <select id="gender">
-            <option value="female">Female</option>
-            <option value="male">Male</option>
-            <p id="empty">Please fill out the field.</p>
+            <option value="1">Female</option>
+            <option value="2">Male</option>
           </select>
 
           <button type="submit" class="btn">Find My Date</button>
         </form>
+        <div id="output"></div>
       </div>
 
 
@@ -51,11 +39,11 @@
           <img src="img/TaylorSwift.png" alt="">
         </div>
         <div id="d3">
-          <h3>Dave Franco</h3>
+          <h3>Dave Franco!</h3>
           <img src="img/franco.jpg" alt="">
         </div>
         <div id="d4">
-          <h3>Ron Pearlman</h3>
+          <h3>Ron Pearlman!</h3>
           <img src="img/pearlman.jpg" alt="">
         </div>
       </div>
